@@ -14,7 +14,7 @@ pipeline {
     stage(" Checkout from SCM"){
         steps{ 
         
-          git branch: 'main', credentialsId: 'github', url: 'https://github.com/gentility88/java-maven-app'
+          git branch: 'main', credentialsId: 'github', url: 'https://github.com/gentility88/java-maven-app.git'
         }
 }
   stage("Build Application"){
